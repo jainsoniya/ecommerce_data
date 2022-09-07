@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: ecommerce_data
+    database: ecommerce_data
+    schema: public
+    tables:
+      - name: customer
+      - name: orders
+      - name: lineitem
