@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: ecommerce_data
+    description: A clone of a snowflake application database
     database: ecommerce_data
     schema: public
     tables:
@@ -9,6 +10,7 @@ sources:
         descripton: raw customers data
         columns:
           - name: c_custkey
+            description: Primary key
             tests:
               - unique
               - not_null
@@ -17,6 +19,7 @@ sources:
         descripton: raw orders data
         columns:
           - name: o_orderkey
+            description: Primary key
             tests:
               - unique
               - not_null      
